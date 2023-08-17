@@ -1,0 +1,20 @@
+1. Directives (Use and create)
+    Angular Directives allow you to add behavior to HTML elements. In reality, all the components are Directives which have the specificity of also having an associated template!
+
+
+
+    if (1==1) {
+        console.log('active');
+    } else {
+        console.log('');
+    }
+
+    //////////////////////////////
+
+    1 == 1 ? console.log('active') : console.log('');
+
+
+
+
+2. Pipes
+3. Events
