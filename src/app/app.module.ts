@@ -12,6 +12,12 @@ import { ArticleComponent } from './blog/article/article.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { BgSizePipe } from './pipes/bg-size.pipe';
 import { WordPipe } from './pipes/word.pipe';
+import { FormsModule } from '@angular/forms';
+import { Level3Component } from './level3/level3.component';
+import { NotesComponent } from './level3/notes/notes.component';
+import { ChangeContentDirective } from './directives/change-content.directive';
+import { UsersComponent } from './users/users/users.component';
+import { UserDetailsComponent } from './users/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +30,17 @@ import { WordPipe } from './pipes/word.pipe';
     ArticleComponent,
     HighlightDirective,
     BgSizePipe,
-    WordPipe
+    WordPipe,
+    Level3Component,
+    NotesComponent,
+    ChangeContentDirective,
+    UsersComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

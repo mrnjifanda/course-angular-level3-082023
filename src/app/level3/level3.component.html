@@ -1,0 +1,21 @@
+<p>level3 works!</p>
+<div class="">
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Level</th>
+            <th>DOB</th>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users;">
+                <td>{{ user.name | uppercase }}</td>
+                <td>{{ user.level }}</td>
+                <td>{{ user.dob}}</td>
+                <td><a routerLink="/level3/notes">Notes of {{ user.name }}</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <router-outlet></router-outlet>
+</div>

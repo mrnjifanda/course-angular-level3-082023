@@ -1,0 +1,10 @@
+Level 4:
+
+Save students (),
+Marks (id, course, score, created_at),
+Courses (id, name, created_at),
+time table (id, course, start, end, created_at);
+
+- One student have acces to only one course;
+- Student have one time table;
+- Student have multi marks;

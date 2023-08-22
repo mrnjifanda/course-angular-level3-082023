@@ -14,8 +14,25 @@
       <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
       <li><a routerLink="/contact-us" routerLinkActive="active">Conctact us</a></li>
       <li><a routerLink="/about-us" routerLinkActive="active">About us</a></li>
+      <li><a routerLink="/level3">Level 3</a></li>
     </ul>
   </nav>
+
+  
+
+  <div class="">
+    <!-- <input type="text"
+      [ngModel]="filter" (ngModelChange)="changeFilter($event)"
+    > -->
+    <input type="text"
+      [(ngModel)]="filter"
+    >
+    <p>{{filter}}</p>
+  </div>
+
+  <!-- <p id="example" ="changeBackground()">
+    {{sayHello}}
+  </p> -->
 
   <router-outlet></router-outlet>
 </body>
